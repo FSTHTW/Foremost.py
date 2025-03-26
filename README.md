@@ -1,6 +1,5 @@
 # Foremost.py
 
-# Foremost.py
 
 ## Description
 Foremost.py est un programme en Python conçu pour la récupération de fichiers et l'extraction de données. Il utilise l'outil Foremost dans un environnement WSL (Windows Subsystem for Linux) pour analyser les images disque ou les données brutes et récupérer des fichiers en fonction de leurs en-têtes, pieds de page et structures internes.
