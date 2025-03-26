@@ -1,21 +1,21 @@
 import subprocess
 
 def open_wsl_and_run_command():
-    # La commande que nous voulons exécuter dans WSL
+    # The command we want to execute in WSL
     wsl_command = "foremost -i /mnt/../../to your .img file -o /mnt/../../recup_img"
     
-    # Ouvrir WSL avec la commande Foremost
+    # Open WSL with the Foremost command
     try:
-        # Utiliser subprocess pour appeler wsl et exécuter la commande séparément
-        print("Ouverture de WSL et exécution de la commande...")
+        # Use subprocess to call wsl and execute the command separately
+        print("Opening WSL and executing the command...")
         subprocess.run(["wsl", "bash", "-c", wsl_command], check=True)
-        print("Analyse terminée ! Les fichiers sont récupérés dans le dossier spécifié.")
+        print("Analysis completed! The files are recovered in the specified folder.")
     except subprocess.CalledProcessError as e:
-        print(f"Erreur lors de l'exécution de la commande : {e}")
+        print(f"Error while executing the command: {e}")
     except FileNotFoundError:
-        print("Erreur : wsl.exe non trouvé. Assurez-vous que WSL est bien installé.")
+        print("Error: wsl.exe not found. Make sure WSL is installed.")
     except Exception as e:
-        print(f"Erreur inattendue : {e}")
+        print(f"Unexpected error: {e}")
 
 if __name__ == "__main__":
     open_wsl_and_run_command()
