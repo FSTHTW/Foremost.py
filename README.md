@@ -19,7 +19,7 @@ Foremost.py is a Python program designed for file recovery and data extraction. 
 ## Installation 🧰
 1. Clone the repository:  
     ```bash
-    git clone https://github.com/your-repo/foremost.py
+    git clone https://github.com/FSTHTW/ForemostAuto
     ```
 2. Navigate to the project directory:  
     ```bash
